@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>connexion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="onlogin(f.value)">
+    <ion-item>
+      <ion-label>email: </ion-label>
+      <ion-input type="text" placeholder="email" name="username" ngModel></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>password: </ion-label>
+      <ion-input type="password" placeholder="password" name="password" ngModel></ion-input>
+    </ion-item>
+    <ion-button type="submit" color="danger" expand="block" shape="round">
+      Valide
+    </ion-button>
+    
+  </form>
+</ion-content>

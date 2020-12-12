@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  public conctact = {
+    nom: "Duboua",
+    prenom: "Yvan",
+    number: "12345",
+    lojo: "assets/imae/lojo.PNG"
+  }
 
   constructor() {}
 
